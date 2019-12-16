@@ -1,0 +1,159 @@
+body {
+
+    width: 100%;
+  background-image: url(https://t-ec.bstatic.com/images/hotel/max1024x768/106/106458589.jpg); 
+    background-size: cover;
+    width: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', serif; 
+}
+
+/* background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(90,92,106,1) 0%, rgba(32,45,58,1) 81.3% ); 
+}*/
+
+
+.container.main {
+    width: 60% !important;
+    max-width: 600px;
+    background-image: url("http://api.thumbr.it/whitenoise-361x370.png?background=fceed2ff&noise=3d3b3d&density=15&opacity=15");
+    padding-bottom: 2%;
+
+}
+
+.col-container {
+    padding-left: 30px;
+    text-align: center;
+    
+}
+.yeartext, .pathtext {
+    margin-bottom: -0.6rem !important;
+    font-family: "Merriweather", serif;
+}
+
+
+h1 {
+    font-size: 4em !important;
+    padding-top: 2%;
+    text-align: center;
+    /*    color:white !important; */
+    font-family:  'Girassol', serif !important;
+}
+
+
+#classResult {
+    visibility: hidden;
+    padding: 20px 20px 0px 0px;
+    /* background-color: rgba(255,255,255, 0.7);  */
+    text-align: center;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 1.1rem;
+    font-size: 1.5rem !important;
+}
+
+#intro {
+    visibility: visible !important;
+    margin-top: 100px;
+    font-family: "Merriweather", serif;
+}
+
+.time {
+    color: gray;
+    font-size: 0.8rem;
+}
+
+#lunch-wrapper .time {
+    padding-top: 4%;
+}
+
+.lesson {
+    margin-bottom: 6%;
+    margin-top: -3%;
+    font-weight: 500;
+    color: rgb(52, 58, 85);
+    font-family:  'Girassol', serif !important;
+}
+
+/* #lunch-wrapper {
+border: 1px rgba(195, 185, 185, 0.445) solid;
+border-radius: 15px;
+margin-right: 10%;
+margin-bottom: 6%;
+
+} */
+
+i {
+    display: block;
+    font-size: 2rem;
+}
+
+.btn:focus {
+    background-color: #8D69AD;
+
+}
+
+
+.btn:hover {
+    background-color: rgb(94, 88, 98);
+
+}
+
+.btn {
+    width: 180px !important;
+    border-radius: 0px !important;
+    text-transform: uppercase;
+    font-family: 'Unica One', serif;
+    font-size: 1.3rem !important;
+  
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active {
+    background-color: #8D69AD !important;
+   
+}
+
+
+/* making content better on mobile */
+@media only screen and (max-width: 720px) {
+    .container.main {
+        width: 100% !important;
+    }
+    .col-container{
+        width: 100% !important;
+    }
+    .lesson {
+        margin-bottom: 3%;
+        margin-top: -1%;
+
+    }
+
+    .col-container {
+        padding-left: 5px;
+    }
+
+    .btn {
+        width: 140px !important;
+        font-size: 1rem !important;
+    }
+  
+  #intro {
+    font-size: 1rem !important;
+  }
+
+  #classResult {
+    font-size: 1.2rem !important;
+  }
+
+
+}
+
+@media only screen and (min-width: 990px) {
+
+    .lesson {
+        margin-bottom: 3%;
+        margin-top: 0%;
+
+    }
+
+}
