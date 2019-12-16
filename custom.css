@@ -1,27 +1,13 @@
-/* body {
 
-    width: 100%;
-  background-image: url(https://t-ec.bstatic.com/images/hotel/max1024x768/106/106458589.jpg); 
-    background-size: cover;
-    width: 100%;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    font-family: 'Poppins', serif; 
-} */
 
 body {
 
     width: 100%;
-    background-image: url(
-"https://anzuj.github.io/czocha/pattern.png");
+    background-image: url(/pattern.png);
     background-attachment: fixed;
     background-repeat: repeat;
     font-family: 'Poppins', serif;
 }
-
-
-/* background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(90,92,106,1) 0%, rgba(32,45,58,1) 81.3% ); 
-}*/
 
 
 .container.main {
@@ -90,13 +76,14 @@ h1 {
     font-family: 'Girassol', serif !important;
 }
 
-/* #lunch-wrapper {
-border: 1px rgba(195, 185, 185, 0.445) solid;
-border-radius: 15px;
-margin-right: 10%;
-margin-bottom: 6%;
+#lunch-wrapper {
+    margin-bottom: 6%;
+    background-color: rgba(255, 255, 255, 0.459);
+    width: 60%;
+    margin: 0 auto;
 
-} */
+}
+
 
 i {
     display: block;
