@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- My CSS -->
+  <link rel="stylesheet" href="css/custom.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!--jQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Girassol|Unica+One|Merriweather&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <title>Czocha Timetable</title>
+</head>
+
+
+<body>
+
+  <div class="container main">
+    <h1>Czocha Timetable</h1>
+
+
+    <div class="col-container">
+      <div class="row">
+        <div class="col-6">
+
+          <div class="year-sample" style="background: none">
+            <div class="yeartext"><p>Select your year:</p></div>
+            <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary">
+                <input type="radio" name="year" id="junior" value="junior"> Junior
+              </label>
+              <label class="btn btn-secondary mt-1">
+                <input type="radio" name="year" id="sophomore" value="sophomore"> Sophomore
+              </label>
+              <label class="btn btn-secondary mt-1 mb-3">
+                <input type="radio" name="year" id="senior" value="senior"> Senior
+              </label>
+            </div>
+          </div>
+
+
+          <div class="path-sample" style="background: none">
+           <div class="pathtext"><p>Select your path:</p></div> 
+            <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+
+              <label class="btn btn-secondary">
+                <input type="radio" name="path" id="artificer" value="artificer"> Artificer
+              </label>
+              <label class="btn btn-secondary mt-1">
+                <input type="radio" name="path" id="healer" value="healer"> Healer
+              </label>
+              <label class="btn btn-secondary mt-1">
+                <input type="radio" name="path" id="crypto" value="crypto"> Cryptozoologist
+              </label>
+              <label class="btn btn-secondary mt-1">
+                <input type="radio" name="path" id="guardian" value="guardian"> Guardian
+              </label>
+              <label class="btn btn-secondary mt-1">
+                <input type="radio" name="path" id="cursebreaker" value="cursebreaker"> Curse Breaker
+              </label>
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- Timetable displaying classResult  -->
+        <div class="col-6" id="classResult">
+
+          <div id="intro">Summon your classes!<br>
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+
+          <div class="time">9:15 - 10:00</div>
+          <div class="lesson" id="lesson1"></div>
+
+          <div class="time">10:15 - 11:00</div>
+          <div class="lesson" id="lesson2"></div>
+
+          <div class="time">11:15 - 12:00</div>
+          <div class="lesson" id="lesson3"></div>
+
+          <div id="lunch-wrapper">
+            <div class="time">12:00 - 14:00</div>
+            <div class="lesson">DAY BREAK</div>
+          </div>
+
+          <div class="time">14:15 - 15:00</div>
+          <div class="lesson" id="lesson4"></div>
+
+          <div class="time">15:15 - 16:00</div>
+          <div class="lesson" id="lesson5"></div>
+
+          <div class="time">16:15 - 17:00</div>
+          <div class="lesson" id="lesson6"></div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- My JS -->
+    <script src="javascript.js"></script>
+    <!-- jQuery & Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <!-- ends content-->
+
+
+  </div>
+</body>
+
+</html>
