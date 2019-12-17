@@ -22,7 +22,6 @@ body {
 }
 
 .col-container {
-    padding-left: 30px;
     text-align: center;
 
 }
@@ -64,7 +63,7 @@ h1 {
 
 #intro {
     visibility: visible;
-    margin-top: 100px;
+     margin-top: 160px; 
     font-family: "Merriweather", serif;
 }
 
@@ -113,13 +112,14 @@ i {
 }
 
 .btn {
-    width: 180px !important;
+    width: 190px !important;
     padding-top:10px !important;
     padding-bottom:10px !important;
     border-radius: 0px !important;
     text-transform: uppercase;
-    font-family: 'Unica One', serif;
+    font-family: 'Unica One', sans-serif; 
     font-size: 1.3rem !important;
+
 
 }
 
@@ -130,7 +130,7 @@ i {
 
 
 /* making content better on mobile */
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 800px) {
     .container.main {
         width: 100% !important;
         height: 100vh !important;
@@ -144,10 +144,6 @@ i {
         margin-bottom: 3%;
         margin-top: -1%;
 
-    }
-
-    .col-container {
-        padding-left: 5px;
     }
 
     .btn {
