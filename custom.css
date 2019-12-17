@@ -95,6 +95,18 @@ i {
     font-size: 2rem;
 }
 
+.credits {
+    color: rgba(128, 128, 128, 0.733);
+    padding-top: 45px;
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+a {
+    color: rgb(103, 87, 173) !important;
+}
+
+
 
 /* buttons */
 .btn:focus {
