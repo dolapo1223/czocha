@@ -1,7 +1,4 @@
-
-
 body {
-
     width: 100%;
     background-image: url(/pattern.png);
     background-attachment: fixed;
@@ -16,7 +13,7 @@ body {
     max-width: 600px;
     background-image: url("http://api.thumbr.it/whitenoise-361x370.png?background=fceed2ff&noise=3d3b3d&density=15&opacity=15");
     padding-bottom: 2%;
-    height: 700px;
+    height: 100vh !important;
 
 
 }
@@ -162,10 +159,6 @@ i {
         font-size: 2em !important;
     }
 
-}
-
-@media only screen and (max-width: 800px){
-    .container.main {height: 100vh !important;
 }
 
 @media only screen and (min-width: 990px) {
