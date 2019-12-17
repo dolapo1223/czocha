@@ -6,16 +6,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- My CSS -->
-  <link rel="stylesheet" href="https://anzuj.github.io/czocha/custom.css">
+  <link rel="stylesheet" href="css/custom.css">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <!--jQuery -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
-  <link rel="icon" type="image/png" href="https://anzuj.github.io/czocha/favicon.png">
+  <link rel="icon" type="image/png" href="favicon.png">
 
-  <link href="https://fonts.googleapis.com/css?family=Girassol|Unica+One|Merriweather&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Girassol|Unica+One|Merriweather|Solway&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <title>Czocha Timetable</title>
@@ -27,13 +27,14 @@
   <div class="container main">
     <h1>Czocha Timetable</h1>
 
-
     <div class="col-container">
       <div class="row">
         <div class="col-6">
 
           <div class="year-sample" style="background: none">
-            <div class="yeartext"><p>Select your year:</p></div>
+            <div class="yeartext">
+              <p>Select your year:</p>
+            </div>
             <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
               <label class="btn btn-secondary">
                 <input type="radio" name="year" id="junior" value="junior"> Junior
@@ -49,7 +50,9 @@
 
 
           <div class="path-sample" style="background: none">
-           <div class="pathtext"><p>Select your path:</p></div> 
+            <div class="pathtext">
+              <p>Select your path:</p>
+            </div>
             <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
 
               <label class="btn btn-secondary">
@@ -80,27 +83,40 @@
 
           <div id="intro">Summon your classes!<br>
             <i class="fas fa-graduation-cap"></i>
+            <!-- <p style="font-size: 1rem; opacity: 0.7;">Tip: Tapping/clicking on a class shows you the location</p> -->
           </div>
-
           <div class="time">9:15 - 10:00</div>
           <div class="lesson" id="lesson1"></div>
+
+          <div class="separator">&#8212;</div>
+
 
           <div class="time">10:15 - 11:00</div>
           <div class="lesson" id="lesson2"></div>
 
+          <div class="separator">&#8212;</div>
+
           <div class="time">11:15 - 12:00</div>
           <div class="lesson" id="lesson3"></div>
 
+          <div class="separator">&#8212;</div>
+
           <div id="lunch-wrapper">
             <div class="time">12:00 - 14:00</div>
-            <div class="lesson">DAY BREAK</div>
+            <div class="lesson">BREAK</div>
           </div>
+
+          <div class="separator">&#8212;</div>
 
           <div class="time">14:15 - 15:00</div>
           <div class="lesson" id="lesson4"></div>
 
+          <div class="separator">&#8212;</div>
+
           <div class="time">15:15 - 16:00</div>
           <div class="lesson" id="lesson5"></div>
+
+          <div class="separator">&#8212;</div>
 
           <div class="time">16:15 - 17:00</div>
           <div class="lesson" id="lesson6"></div>
@@ -108,12 +124,18 @@
 
         </div>
 
+
+       
+
       </div>
+
 
     </div>
 
+  
+
     <!-- My JS -->
-    <script src="https://anzuj.github.io/czocha/javascript.js"></script>
+    <script src="javascript.js"></script>
     <!-- jQuery & Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
