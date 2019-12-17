@@ -1,26 +1,21 @@
+html {
+    height: 100%;
+}
+
 body {
     width: 100%;
     background-image: url(/pattern.png);
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-repeat: repeat;
     font-family: 'Poppins', serif;
 }
 
-
-
-.container.main {
-    width: 60% !important;
-    max-width: 600px;
-    background-image: url("http://api.thumbr.it/whitenoise-361x370.png?background=fceed2ff&noise=3d3b3d&density=15&opacity=15");
+h1 {
+    font-size: 4em !important;
+    padding-top: 2%;
     padding-bottom: 2%;
-    height: 100vh !important;
-
-
-}
-
-.col-container {
     text-align: center;
-
+    font-family: 'Girassol', serif !important;
 }
 
 .yeartext,
@@ -28,6 +23,37 @@ body {
     margin-bottom: -0.6rem !important;
     font-family: "Merriweather", serif;
 }
+
+.container.main {
+    width: 60% !important;
+    max-width: 600px;
+    background-image: url("http://api.thumbr.it/whitenoise-361x370.png?background=fceed2ff&noise=3d3b3d&density=15&opacity=15");
+    height: 100% !important;
+    text-align: center;
+    
+}
+
+
+#classResult {
+    visibility: hidden;
+    text-align: center;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 1.5rem;
+}
+
+#intro {
+    visibility: visible;
+    margin-top: 160px; 
+    font-family: "Merriweather", serif;
+}
+
+.time {
+    color: gray;
+    font-size: 0.8rem;
+    margin-bottom: -8px;
+}
+
 
 .location {
     font-size: 1rem;
@@ -37,55 +63,24 @@ body {
     font-weight: 350;
 }
 
-
-h1 {
-    font-size: 4em !important;
-    padding-top: 2%;
-    text-align: center;
-    /*    color:white !important; */
-    font-family: 'Girassol', serif !important;
-}
-
-
-#classResult {
-    visibility: hidden;
-    padding: 20px 20px 0px 0px;
-    /* background-color: rgba(255,255,255, 0.7);  */
-    text-align: center;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    font-size: 1.1rem;
-    font-size: 1.5rem !important;
-}
-
-#intro {
-    visibility: visible;
-     margin-top: 160px; 
-    font-family: "Merriweather", serif;
-}
-
-.time {
-    color: gray;
+.separator {
+    margin-bottom: -6px;
     font-size: 0.8rem;
-    margin-bottom: -3%;
+    padding: 2%;
+    color: gray;
 }
 
-#lunch-wrapper .time {
-    padding-top: 4%;
-}
 
 .lesson {
-    margin-bottom: 6%;
-    margin-top: -3%;
+    margin-bottom: -10px;
     font-weight: 500;
     color: rgb(52, 58, 85);
     font-family: 'Girassol', serif !important;
 }
 
 #lunch-wrapper {
-    margin-bottom: 6%;
-    background-color: rgba(255, 255, 255, 0.459);
-    width: 60%;
+    background-color: rgba(250, 245, 235, 0.808);
+    width: 70%;
     margin: 0 auto;
 
 }
@@ -96,16 +91,14 @@ i {
     font-size: 2rem;
 }
 
+
+/* buttons */
 .btn:focus {
     background-color: #8D69AD;
-
 }
-
-
 
 .btn:hover {
     background-color: rgb(94, 88, 98);
-
 }
 
 .btn {
@@ -116,13 +109,10 @@ i {
     text-transform: uppercase;
     font-family: 'Unica One', sans-serif; 
     font-size: 1.3rem !important;
-
-
 }
 
 .btn-secondary:not(:disabled):not(.disabled).active {
     background-color: #8D69AD !important;
-
 }
 
 
@@ -130,16 +120,6 @@ i {
 @media only screen and (max-width: 600px) {
     .container.main {
         width: 100% !important;  
-    }
-
-    .col-container {
-        width: 100% !important;
-    }
-
-    .lesson {
-        margin-bottom: 3%;
-        margin-top: -1%;
-
     }
 
     .btn {
@@ -157,16 +137,6 @@ i {
 
     h1 {
         font-size: 2em !important;
-    }
-
-}
-
-@media only screen and (min-width: 990px) {
-
-    .lesson {
-        margin-bottom: 3%;
-        margin-top: 0%;
-
     }
 
 }
