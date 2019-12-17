@@ -74,7 +74,8 @@ h3 {
 .container.main {
     width: 60% !important;
     max-width: 600px;
-    background-image: url("https://api.thumbr.it/whitenoise-361x370.png?background=fceed2ff&noise=3d3b3d&density=15&opacity=15");
+    background-color: #edd7b0;
+    background-image: url("https://czocha.github.io/czocha/images/fresh-snow.png");
     text-align: center;
     padding-bottom: 3%;
     
