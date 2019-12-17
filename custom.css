@@ -28,8 +28,8 @@ h1 {
     width: 60% !important;
     max-width: 600px;
     background-image: url("http://api.thumbr.it/whitenoise-361x370.png?background=fceed2ff&noise=3d3b3d&density=15&opacity=15");
-    height: 100% !important;
     text-align: center;
+    padding-bottom: 3%;
     
 }
 
