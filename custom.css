@@ -50,8 +50,7 @@ h1 {
 #classResult {
     visibility: hidden;
     text-align: center;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
+    padding-top: 2rem;
     font-size: 1.5rem;
 }
 
