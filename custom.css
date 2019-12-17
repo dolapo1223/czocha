@@ -63,17 +63,17 @@ h1 {
 
 .time {
     color: gray;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     margin-bottom: -8px;
 }
 
 
 .location {
-    font-size: 1rem;
+    font-size: 0.7rem;
     font-family:"Segoe UI", sans-serif;
     color: gray;
     margin-top: -2%;
-    font-weight: 350;
+    font-weight: 400;
 }
 
 .separator {
@@ -89,6 +89,7 @@ h1 {
     font-weight: 500;
     color: rgb(52, 58, 85);
     font-family: 'Girassol', serif !important;
+    letter-spacing: 0.3px;
 }
 
 #lunch-wrapper {
@@ -144,6 +145,7 @@ a{
     .container.main {
         width: 100% !important;
         height: 100vh !important;
+        padding-left: 0; 
     }
 
     #lunch-wrapper {
