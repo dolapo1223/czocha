@@ -1,17 +1,20 @@
-const ari = "Arithmancy";
-const alc = "Alchemy";
-const md = "Magical Defence";
-const herb = "Herbology";
-const invo = "Invocation";
-const run = "Runic Magic";
-const cs = "Conflux Studies";
-const beast = "Beastology";
-const mm = "Mind Magic";
-const mt = "Magical Theory";
-const rm = "Ritual Magic";
-const tech = "Technomancy";
+const ari = "Arithmancy<br><div class='location'> (Museum)</div>";
+const alc = "Alchemy<br><div class='location'> (Alchemy Cellar)</div>";
+const md = "Magical Defence<br><div class='location'> (Gazebo)</div>";
+const herb = "Herbology<br><div class='location'> (Marble Hall)</div>";
+const invo = "Invocation<br><div class='location'> (Inner Courtyard)</div>";
+const run = "Runic Magic<br><div class='location'> (Museum)</div>";
+const cs = "Conflux Studies<br><div class='location'> (Library)</div>";
+const beast = "Beastology<br><div class='location'> (Dungeon)</div>";
+const mm = "Mind Magic<br><div class='location'> (Auditorium)</div>";
+const mt = "Magical Theory<br><div class='location'> (Library)</div>";
+const rm = "Ritual Magic<br><div class='location'> (Marble Hall)</div>";
+const tech = "Technomancy<br><div class='location'> (Auditorium)</div>";
 
-//function to show #classResult. Couldn't figure out how to make a conditional to make it appear once year and path are chosen, so injecting it manually to very timetable conditional instead        
+//function to show #classResult. Couldn't figure out how to make a conditional to make it appear once year and path are chosen, so injecting it manually to very timetable conditional instead  
+
+   
+
 function show() {
     document.querySelector("#intro").style.display = "none";
     document.querySelector("#classResult").style.visibility = "visible";
@@ -169,3 +172,4 @@ $(document).ready(function () {
 
     });
 });
+
