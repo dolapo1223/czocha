@@ -4,7 +4,7 @@ html {
 
 body {
     width: 100%;
-    background-image: url(/pattern.png);
+    background-image: url(https://anzuj.github.io/czocha/pattern.png);
     background-attachment: scroll;
     background-repeat: repeat;
     font-family: 'Poppins', serif;
