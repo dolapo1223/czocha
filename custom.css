@@ -33,6 +33,10 @@ h1 {
     
 }
 
+.lesson:hover {
+    color: rgb(101, 120, 194);
+}
+
 
 #classResult {
     visibility: hidden;
@@ -94,11 +98,11 @@ i {
 
 /* buttons */
 .btn:focus {
-    background-color: #8D69AD;
+    background-color: #2D365F;
 }
 
 .btn:hover {
-    background-color: rgb(94, 88, 98);
+    background-color: rgb(68, 82, 139);
 }
 
 .btn {
@@ -112,7 +116,7 @@ i {
 }
 
 .btn-secondary:not(:disabled):not(.disabled).active {
-    background-color: #8D69AD !important;
+    background-color: #2D365F !important;
 }
 
 
