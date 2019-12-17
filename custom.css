@@ -10,6 +10,7 @@ body {
 }
 
 
+
 .container.main {
     width: 60% !important;
     max-width: 600px;
@@ -30,6 +31,14 @@ body {
 .pathtext {
     margin-bottom: -0.6rem !important;
     font-family: "Merriweather", serif;
+}
+
+.location {
+    font-size: 1rem;
+    font-family:"Segoe UI", sans-serif;
+    color: gray;
+    margin-top: -2%;
+    font-weight: 400;
 }
 
 
@@ -54,7 +63,7 @@ h1 {
 }
 
 #intro {
-    visibility: visible !important;
+    visibility: visible;
     margin-top: 100px;
     font-family: "Merriweather", serif;
 }
@@ -62,6 +71,7 @@ h1 {
 .time {
     color: gray;
     font-size: 0.8rem;
+    margin-bottom: -3%;
 }
 
 #lunch-wrapper .time {
@@ -96,6 +106,7 @@ i {
 }
 
 
+
 .btn:hover {
     background-color: rgb(94, 88, 98);
 
@@ -103,6 +114,8 @@ i {
 
 .btn {
     width: 180px !important;
+    padding-top:10px !important;
+    padding-bottom:10px !important;
     border-radius: 0px !important;
     text-transform: uppercase;
     font-family: 'Unica One', serif;
@@ -117,7 +130,7 @@ i {
 
 
 /* making content better on mobile */
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 620px) {
     .container.main {
         width: 100% !important;
         height: 100vh !important;
