@@ -4,10 +4,19 @@ html {
 
 body {
     width: 100%;
-    background-image: url(https://anzuj.github.io/czocha/pattern.png);
+    background-image: url("https://anzuj.github.io/czocha/images/pattern.png");
     background-attachment: scroll;
     background-repeat: repeat;
     font-family: 'Poppins', serif;
+}
+
+img.tie {
+    height: 20px;
+}
+
+img.logo {
+    height: 18px;
+    mix-blend-mode:multiply;
 }
 
 h1 {
@@ -95,18 +104,6 @@ i {
     font-size: 2rem;
 }
 
-.credits {
-    color: rgba(128, 128, 128, 0.733);
-    padding-top: 45px;
-    font-style: italic;
-    font-size: 0.8rem;
-}
-
-a {
-    color: rgb(103, 87, 173) !important;
-}
-
-
 
 /* buttons */
 .btn:focus {
@@ -118,7 +115,7 @@ a {
 }
 
 .btn {
-    width: 190px !important;
+    width: 215px !important;
     padding-top:10px !important;
     padding-bottom:10px !important;
     border-radius: 0px !important;
@@ -131,6 +128,16 @@ a {
     background-color: #2D365F !important;
 }
 
+.credits{
+    color: rgba(128, 128, 128, 0.733);
+    padding-top: 45px;
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+a{
+    color: rgb(103, 87, 173) !important;
+}
 
 /* making content better on mobile */
 @media only screen and (max-width: 600px) {
@@ -147,7 +154,15 @@ a {
 
     .btn {
         width: 140px !important;
-        font-size: 1rem !important;
+        font-size: 0.8rem !important;
+    }
+
+    img.logo {
+        height: 15px;
+    }
+
+    img.tie {
+        height: 17px;
     }
 
     #intro {
