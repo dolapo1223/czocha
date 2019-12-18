@@ -5,7 +5,8 @@ html {
 
 body {
     width: 100%;
-    background-image: url("https://anzuj.github.io/czocha/images/pattern.png");
+    background-image: url("https://czochahelper.site/images/pattern.png");
+    background-color: #2A355E;
     background-attachment: scroll;
     background-repeat: repeat;
     font-family: 'Poppins', serif;
@@ -74,11 +75,11 @@ h3 {
 .container.main {
     width: 60% !important;
     max-width: 600px;
-    background-color: #edd7b0;
-    background-image: url("https://anzuj.github.io/czocha/images/fresh-snow.png");
     text-align: center;
     padding-bottom: 3%;
     
+    background-color: #edd7b0;
+    background-image: url("https://czochahelper.site/images/fresh-snow.png");
 }
 
 .lesson:hover {
@@ -91,48 +92,7 @@ h3 {
     text-align: center;
     font-size: 1.5rem;
     padding-top: 2rem;
-    /* animation: puff-in-center 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both; */
-
 }
-
-/**
- * ----------------------------------------
- * animation puff-in-center
- * ----------------------------------------
- */
- /* @-webkit-keyframes puff-in-center {
-    0% {
-      -webkit-transform: scale(2);
-              transform: scale(2);
-      -webkit-filter: blur(4px);
-              filter: blur(4px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-filter: blur(0px);
-              filter: blur(0px);
-      opacity: 1;
-    }
-  }
-  @keyframes puff-in-center {
-    0% {
-      -webkit-transform: scale(2);
-              transform: scale(2);
-      -webkit-filter: blur(4px);
-              filter: blur(4px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-filter: blur(0px);
-              filter: blur(0px);
-      opacity: 1;
-    }
-  }
-   */
 
 #intro {
     visibility: visible;
@@ -245,6 +205,33 @@ i {
     transform: scale(1.05);
 }
 
+ul.songlist {
+    list-style-type: none;
+    margin-bottom: 1rem;
+    padding: 0;
+
+}
+
+.songlist li{
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.songlist a {
+    text-decoration: none !important;
+    color: black !important;
+}
+
+.up a {
+ font-family: 'Unica One', sans-serif; 
+    font-size: 0.8rem;
+    color: rgb(73, 131, 197) !important;
+    text-decoration: none !important;
+}
+.up i {
+    font-size: 1rem;
+}
+
 /* making content better on mobile */
 @media only screen and (max-width: 600px) {
     .container.main {
@@ -286,6 +273,15 @@ i {
 
     h3{
         font-size: 1rem !important;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    .container.main {
+        width: 100% !important;
+        height: 100% !important;
+        padding-left: 1; 
     }
 
 }
