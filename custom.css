@@ -31,7 +31,7 @@ body {
 
 /* navbar */
 
-.nav-pills .active {
+.nav-link {
     background-color: #2D365F !important;
     margin: 0 2px;
     border-radius: 0px !important;
@@ -41,8 +41,12 @@ body {
     padding: 4px 6px;
 }
 
-.nav-pills .active:hover{
+.nav-link:hover{
     background-color: rgb(126, 128, 141) !important;
+}
+
+.nav-item a{
+    color: white !important;
 }
 
 
@@ -220,6 +224,10 @@ ul.songlist {
 .songlist a {
     text-decoration: none !important;
     color: black !important;
+}
+
+.songlist a:hover {
+    color: rgb(66, 81, 145) !important;
 }
 
 .up a {
