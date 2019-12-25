@@ -42,7 +42,7 @@ body {
 }
 
 .nav-link:hover{
-    background-color: rgb(126, 128, 141) !important;
+    background-color: rgb(60, 72, 124) !important;
 }
 
 .nav-item a{
@@ -154,7 +154,7 @@ i {
 }
 
 .col-container .btn:hover {
-    background-color: rgb(68, 82, 139);
+    background-color: rgb(60, 72, 124) !important;
     transform: scale(1.05);
 }
 
@@ -216,28 +216,38 @@ ul.songlist {
 
 }
 
-.songlist li{
-    font-weight: 600;
-    font-size: 1rem;
-}
+ .songlist li{
+margin: 3px;
+} 
 
 .songlist a {
+    text-decoration: none !important;
+    color: white !important;
+}
+
+.songlist a:hover {
+    background-color: rgb(60, 72, 124) !important;
+}
+
+
+ .up a {
+ font-family: 'Unica One', sans-serif; 
+    color: rgb(255, 255, 255) !important;
+} 
+
+h1 a {
     text-decoration: none !important;
     color: black !important;
 }
 
-.songlist a:hover {
-    color: rgb(66, 81, 145) !important;
-}
 
-.up a {
- font-family: 'Unica One', sans-serif; 
-    font-size: 0.8rem;
-    color: rgb(73, 131, 197) !important;
-    text-decoration: none !important;
-}
 .up i {
     font-size: 1rem;
+}
+
+.up{
+    padding:1rem;
+    margin: 0 auto;
 }
 
 /* making content better on mobile */
