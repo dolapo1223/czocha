@@ -1,3 +1,23 @@
+
+
+  // LINK TO TABS
+$(document).ready(() => {
+    var url = window.location.href;
+    if (url.indexOf("#") > 0){
+    var activeTab = url.substring(url.indexOf("#") + 1);
+      $('.nav[role="tablist"] a[href="#'+activeTab+'"]').tab('show');
+    }
+  
+    $('a[role="tab"]').on("click", function() {
+      var newUrl;
+      const hash = $(this).attr("href");
+        newUrl = url.split("#")[0] + hash;
+      history.replaceState(null, null, newUrl);
+    });
+  });
+
+
+
 const ari = "Arithmancy<br><div class='location'> (Museum)</div>";
 const alc = "Alchemy<br><div class='location'> (Alchemy Cellar)</div>";
 const md = "Magical Defence<br><div class='location'> (Gazebo)</div>";
