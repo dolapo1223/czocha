@@ -6,20 +6,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- My CSS -->
-  <link rel="stylesheet" href="https://czochahelper.site/custom.css">
+  <link rel="stylesheet" href="/custom.css">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <!--jQuery -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
-  <link rel="icon" type="image/png" href="https://czochahelper.site/images/favicon.png">
+  <link rel="icon" type="image/png" href="https://anzuj.github.io/czocha/images/favicon.png">
 
-  <link href="https://fonts.googleapis.com/css?family=Girassol|Unica+One|Merriweather|Solway&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Girassol|Unica+One|Merriweather|Solway&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <title>Czocha Timetable</title>
-   <meta name="theme-color" content="#5A6268"/>
+  <meta name="theme-color" content="#5A6268" />
 </head>
 
 
@@ -27,133 +28,334 @@
 
   <div class="container main">
     <h1>Czocha Helper</h1>
-    
-       <!--Navbar centered Pills -->
+
+    <!--Navbar -->
     <div class="container mb-2">
-      <ul class="nav nav-pills nav-justified">
+      <ul id="pills-tab" role="tablist" class="nav nav-pills nav-justified">
         <li class="nav-item">
-          <a class="nav-link active" href="https://czochahelper.site/index.html">Timetable</a>
+          <a data-toggle="pill" id="index-tab" class="nav-link active" aria-selected="true" href="#index"
+            role="tab" aria-controls="index">Timetable</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="https://czochahelper.site/events.html">Event Schedule</a>
+        <li class="nav-item data-toggle">
+          <a data-toggle="pill" id="events-tab" class="nav-link" aria-selected="false" href="#events"
+            role="tab" aria-controls="events">Event Schedule</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="https://czochahelper.site/songs.html">Songs</a>
+        <li class="nav-item data-toggle">
+          <a data-toggle="pill" id="songs-tab" class="nav-link" aria-selected="false" href="#songs"
+            role="tab" aria-controls="songs">Songs</a>
         </li>
       </ul>
     </div>
-    <!--/Navbar centered Pills -->
+    <!--/Navbar -->
 
-    <div class="col-container">
-      <div class="row">
-        <div class="col-6">
 
-          <div class="year-sample" style="background: none">
-            <div class="yeartext">
-              <p>Select your year:</p>
+    <!--tab content container -->
+    <div class="tab-content" id="pills-tabContent">
+
+      <!-- timetable pane -->
+      <div id="index" class="col-container tab-pane fade show active" role="tabpanel"
+        aria-labelledby="index-tab">
+        <div class="row">
+          <div class="col-6">
+
+            <div class="year-sample" style="background: none">
+              <div class="yeartext">
+                <p>Select your year:</p>
+              </div>
+              <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-secondary">
+                  <input type="radio" name="year" id="junior" value="junior"> <span><img class="tie"
+                      src="https://czochahelper.site/images/junior.png" alt="tie"></span> Junior
+                </label>
+                <label class="btn btn-secondary mt-1">
+                  <input type="radio" name="year" id="sophomore" value="sophomore"> <span><img class="tie"
+                      src="https://czochahelper.site/images/soph.png" alt="tie"></span> Sophomore
+                </label>
+                <label class="btn btn-secondary mt-1 mb-3">
+                  <input type="radio" name="year" id="senior" value="senior"> <span><img class="tie"
+                      src="https://czochahelper.site/images/senior.png" alt="tie"></span> Senior
+                </label>
+              </div>
             </div>
-            <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
-              <label class="btn btn-secondary">
-                <input type="radio" name="year" id="junior" value="junior"> <span><img class="tie" src="https://czochahelper.site/images/junior.png" alt="tie"></span> Junior
-              </label>
-              <label class="btn btn-secondary mt-1">
-                <input type="radio" name="year" id="sophomore" value="sophomore"> <span><img class="tie" src="https://czochahelper.site/images/soph.png" alt="tie"></span> Sophomore
-              </label>
-              <label class="btn btn-secondary mt-1 mb-3">
-                <input type="radio" name="year" id="senior" value="senior"> <span><img class="tie" src="https://czochahelper.site/images/senior.png" alt="tie"></span> Senior 
-              </label>
+
+
+            <div class="path-sample" style="background: none">
+              <div class="pathtext">
+                <p>Select your path:</p>
+              </div>
+              <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+
+                <label class="btn btn-secondary">
+                  <input type="radio" name="path" id="artificer" value="artificer"><span><img class="logo"
+                      src="https://czochahelper.site/images/artificer.png" alt="pathlogo"></span> Artificer
+                </label>
+                <label class="btn btn-secondary mt-1">
+                  <input type="radio" name="path" id="healer" value="healer"><span><img class="logo"
+                      src="https://czochahelper.site/images/healer.png" alt="pathlogo"></span> Healer
+                </label>
+                <label class="btn btn-secondary mt-1">
+                  <input type="radio" name="path" id="crypto" value="crypto"><span><img class="logo"
+                      src="https://czochahelper.site/images/crypto.png" alt="pathlogo"></span> Cryptozoologist
+                </label>
+                <label class="btn btn-secondary mt-1">
+                  <input type="radio" name="path" id="guardian" value="guardian"><span><img class="logo"
+                      src="https://czochahelper.site/images/guardian.png" alt="pathlogo"></span> Guardian
+                </label>
+                <label class="btn btn-secondary mt-1">
+                  <input type="radio" name="path" id="cursebreaker" value="cursebreaker"><span><img class="logo"
+                      src="https://czochahelper.site/images/cb.png" alt="pathlogo"></span> Curse Breaker
+                </label>
+              </div>
+
             </div>
+
           </div>
 
 
-          <div class="path-sample" style="background: none">
-            <div class="pathtext">
-              <p>Select your path:</p>
-            </div>
-            <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+          <!-- Timetable displaying classResult  -->
+          <div class="col-6" id="classResult">
 
-              <label class="btn btn-secondary">
-                <input type="radio" name="path" id="artificer" value="artificer"><span><img class="logo" src="https://czochahelper.site/images/artificer.png" alt="pathlogo">  Artificer
-              </label>
-              <label class="btn btn-secondary mt-1">
-                <input type="radio" name="path" id="healer" value="healer"><span><img class="logo" src="https://czochahelper.site/images/healer.png" alt="pathlogo">  Healer
-              </label>
-              <label class="btn btn-secondary mt-1">
-                <input type="radio" name="path" id="crypto" value="crypto"><span><img class="logo" src="https://czochahelper.site/images/crypto.png" alt="pathlogo">  Cryptozoologist
-              </label>
-              <label class="btn btn-secondary mt-1">
-                <input type="radio" name="path" id="guardian" value="guardian"><span><img class="logo" src="https://czochahelper.site/images/guardian.png" alt="pathlogo">  Guardian
-              </label>
-              <label class="btn btn-secondary mt-1">
-                <input type="radio" name="path" id="cursebreaker" value="cursebreaker"><span><img class="logo" src="https://czochahelper.site/images/cb.png" alt="pathlogo">  Curse Breaker
-              </label>
+            <div id="intro">Summon your classes!<br>
+              <i class="fas fa-graduation-cap"></i>
             </div>
+            <div class="time">9:15 - 10:00</div>
+            <div class="lesson" id="lesson1"></div>
+
+            <div class="separator">&#8212;</div>
+
+
+            <div class="time">10:15 - 11:00</div>
+            <div class="lesson" id="lesson2"></div>
+
+            <div class="separator">&#8212;</div>
+
+            <div class="time">11:15 - 12:00</div>
+            <div class="lesson" id="lesson3"></div>
+
+            <div class="separator">&#8212;</div>
+
+            <div id="lunch-wrapper">
+              <div class="time">12:00 - 14:00</div>
+              <div class="lesson">BREAK</div>
+            </div>
+
+            <div class="separator">&#8212;</div>
+
+            <div class="time">14:15 - 15:00</div>
+            <div class="lesson" id="lesson4"></div>
+
+            <div class="separator">&#8212;</div>
+
+            <div class="time">15:15 - 16:00</div>
+            <div class="lesson" id="lesson5"></div>
+
+            <div class="separator">&#8212;</div>
+
+            <div class="time">16:15 - 17:00</div>
+            <div class="lesson" id="lesson6"></div>
 
           </div>
+        </div>
+      </div>
+      <!-- /timetable pane -->
 
+      <!-- events -->
+      <div id="events" class="content tab-pane fade" role="tabpanel" aria-labelledby="events-tab">
+
+        <!--day submenu -->
+        <div class="container mb-2">
+          <ul id="days" class="nav nav-pills nav-justified">
+            <li class="nav-item">
+              <a class="nav-link active" href="#thursday">Thursday</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#friday">Friday</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#saturday">Saturday</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#sunday">Sunday</a>
+            </li>
+          </ul>
+        </div>
+        <!--/day submenu -->
+        <div class="m-3 alert alert-info text-center alert-dismissible fade show" role="alert">
+          PS: Below is taken from an old design document as a placeholder. Information will be updated prior to CoW23.
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
 
 
+        <h3 id="thursday">Thursday</h3>
 
-        <!-- Timetable displaying classResult  -->
-        <div class="col-6" id="classResult">
+        <ul>
+          <li> Before 15.00 Players arrive and are checked in (the bus arrives around 14.30)</li>
+          <li> 16.00 - 16.05 Introduction</li>
+          <li> 16.05 - 16.45 Organizer briefing in groups</li>
+          <li> 16.45 - 20.00 Player workshops (including some light food)</li>
+          <li> 2.00 - 21.00 Players get into costume and leave the castle (and there’s time for delays)</li>
+          <li> 21.00 - 21.15 The larp starts. Students are welcomed to Czocha College.</li>
+          <li> 21.15 - 22.00 The Opening Dinner</li>
+          <li> 22.00 - 23.00 Juniors learn the rules of the school</li>
+          <li> 22.00 - 23.00 Sophomores & Seniors meet in Common Rooms</li>
+          <li> 22.00 - 23.00 Staff hold first Staff meeting</li>
+          <li> 23.00 - 00.00 Students: Free time</li>
+          <li> 00.00 - 02.00 Curfew. Students should be in their beds</li>
+          <li> 02.00 - 07.00 Offgame sleeping break for everyone</li>
+        </ul>
 
-          <div id="intro">Summon your classes!<br>
-            <i class="fas fa-graduation-cap"></i>
-            <!-- <p style="font-size: 1rem; opacity: 0.7;">Tip: Tapping/clicking on a class shows you the location</p> -->
+        <h3 id="friday">Friday</h3>
+        <ul>
+          <li> 07.00 - 07.30 Play starts again.</li>
+          <li> 07.30 - 08.30 Breakfast</li>
+          <li> 08.30 - 08.45 Important Messages (start of school day)</li>
+          <li> 08.45 - 09.00 Break</li>
+          <li> 09.00 - 09.45 Lesson Block #1</li>
+          <li> 09.45 - 10.00 Break</li>
+          <li> 10.00 - 10.45 Lesson Block #2</li>
+          <li> 10.45 - 11.00 Break</li>
+          <li> 11.00 - 11.45 Lesson Block #3</li>
+          <li> 11.45 - 13.15 Midday Break & Lunch</li>
+          <li> 13.15 - 14.00 Lesson Block #4</li>
+          <li> 14.00 - 14.15 Break</li>
+          <li> 14.15 - 15.00 Lesson Block #5</li>
+          <li> 15.00 - 15.15 Break</li>
+          <li> 15.15 - 16.00 Lesson Block #6</li>
+          <li> 16.00 - 16.05 Everyone gathers at Great Hall</li>
+          <li> 16.05 - 16.15 Important Messages (end of school day)</li>
+          <li> 16.15 - 19.00 Students: Free time</li>
+          <li> 16.30 - 18.30 Prefects & Juniors: The Sorting</li>
+          <li> 19.00 - 20.00 Dinner</li>
+          <li> 20.00 - 20.30 Announcements: Juniors are sorted</li>
+          <li> 20.30 - 21.00 Juniors introduced to their new Houses</li>
+          <li> 21.00 - 00.00 Students: Free time</li>
+          <li> 00.00 - 02.00 Curfew. Students should be in their beds</li>
+          <li> 02.00 - 07.00 Offgame sleeping break for everyone</li>
+        </ul>
+
+        <h3 id="saturday">Saturday</h3>
+        <ul>
+          <li>07.00 - 07.30 Play starts again</li>
+          <li> 07.30 - 08.30 Breakfast</li>
+          <li> 08.30 - 08.45 Important Messages (start of school day)</li>
+          <li> 08.45 - 09.00 Break</li>
+          <li> 09.00 - 09.45 Lesson #1</li>
+          <li> 09.45 - 10.00 Break</li>
+          <li> 10.00 - 10.45 Lesson #2</li>
+          <li> 10.45 - 11.00 Break</li>
+          <li> 11.00 - 11.45 Lesson #3</li>
+          <li> 11.45 - 13.15 Midday Break & Lunch</li>
+          <li> 13.15 - 14.00 Lesson #4</li>
+          <li> 14.00 - 14.15 Break</li>
+          <li> 14.15 - 15.00 Lesson #5</li>
+          <li> 15.00 - 15.15 Break</li>
+          <li> 15.15 - 16.00 Lesson #6</li>
+          <li> 16.00 - 16.05 Everyone gathers at Great Hall</li>
+          <li> 16.05 - 16.15 Important Messages (end of school day)</li>
+          <li> 16.15 - 17.30 Students: Free time</li>
+          <li> 17.30 - 18.30 Dinner</li>
+          <li> 18.00 - 20.00 Everyone gets ready for the party</li>
+          <li> 20.00 - 23.00 The Grand Opening Party</li>
+          <li> 23.00 - 23.15 The larp ends with the Losing speeches</li>
+          <li> 23.15 - 0.00 Structured debrief</li>
+          <li> 0.00 - 04.00 Afterparty. The bar closes at 04.00</li>
+        </ul>
+
+        <h3 id="sunday">Sunday</h3>
+        <ul>
+          <li>09.00 - 10.00 Breakfast</li>
+          <li> 10.00 - 10.15 The busses for Berlin leave.</li>
+          <li> 10.00 - 12.00 Clean-up, debriefing and goodbyes</li>
+          <li> 12.00 We leave the castle!</li>
+        </ul>
+
+      </div> <!-- /events -->
+
+      <!-- songs -->
+
+      <div class="tab-pane fade" id="songs" role="tabpanel" aria-labelledby="songs-tab">
+
+
+     
+    <div class="card col-lg-5 col-7 m-auto">
+      <div class="card-body">
+        <a class="stretched-link" href="/songs/czochasongs.html">
+          <img class="card-img-top" src="https://czochahelper.site/images/czocha.png" alt="czocha">
+          <h3 class="card-title">Czocha songs</h3>
+        </a>
+      </div>
+    </div>
+       <!-- /czocha -->
+
+
+ <div class="row justify-content-center">
+        <!-- other houses -->
+        <div class="card col-lg-4 col-6">
+          <div class="card-body">
+            <a class="stretched-link" href="/songs/durentiussongs.html">
+              <img class="card-img-top" src="https://czochahelper.site/images/durentius.png" alt="czocha">
+              <h3 class="card-title">Durentius songs</h3>
+            </a>
           </div>
-          <div class="time">9:15 - 10:00</div>
-          <div class="lesson" id="lesson1"></div>
-
-          <div class="separator">&#8212;</div>
-
-
-          <div class="time">10:15 - 11:00</div>
-          <div class="lesson" id="lesson2"></div>
-
-          <div class="separator">&#8212;</div>
-
-          <div class="time">11:15 - 12:00</div>
-          <div class="lesson" id="lesson3"></div>
-
-          <div class="separator">&#8212;</div>
-
-          <div id="lunch-wrapper">
-            <div class="time">12:00 - 14:00</div>
-            <div class="lesson">BREAK</div>
+        </div>
+        <!-- card separation -->
+        <div class="card col-lg-4 col-6">
+          <div class="card-body">
+            <a class="stretched-link" href="/songs/sendivogiussongs.html">
+              <img class="card-img-top" src="https://czochahelper.site/images/sendi.png" alt="czocha">
+              <h3 class="card-title">Sendivogius songs</h3>
+            </a>
           </div>
+        </div>
+     
+        <!-- card separation -->
+        <div class="card col-lg-4 col-6">
+          <div class="card-body">
+            <a class="stretched-link" href="/songs/molinsongs.html">
+              <img class="card-img-top" src="https://czochahelper.site/images/molin.png" alt="czocha">
+              <h3 class="card-title">Molin songs</h3>
+            </a>
+          </div>
+        </div>
+          <!-- card separation -->
 
-          <div class="separator">&#8212;</div>
-
-          <div class="time">14:15 - 15:00</div>
-          <div class="lesson" id="lesson4"></div>
-
-          <div class="separator">&#8212;</div>
-
-          <div class="time">15:15 - 16:00</div>
-          <div class="lesson" id="lesson5"></div>
-
-          <div class="separator">&#8212;</div>
-
-          <div class="time">16:15 - 17:00</div>
-          <div class="lesson" id="lesson6"></div>
-
-
+        <div class="card col-lg-4 col-6">
+          <div class="card-body">
+            <a class="stretched-link" href="/songs/faustsongs.html">
+              <img class="card-img-top" src="https://czochahelper.site/images/faust.png" alt="czocha">
+              <h3 class="card-title">Faust songs</h3>
+            </a> </div>
         </div>
 
-
-       
-
+  
+        <!-- card separation -->
+        <div class="card col-lg-4 col-6">
+          <div class="card-body">
+            <a class="stretched-link" href="/songs/libussasongs.html">
+              <img class="card-img-top" src="https://czochahelper.site/images/libussa.png" alt="czocha">
+              <h3 class="card-title">Libussa songs</h3>
+            </a>
+          </div>
+        </div>
       </div>
 
-
     </div>
+      
+<!-- /songs -->
 
-    <div class="credits">Magicked together by: <a href="https://www.facebook.com/anzelika91" target="_blank">AnzuPai</a><br>anzelika91@gmail.com</div>
-  
+
+
+    </div> <!--/tab content container-->
+    
+
+    <div class="credits">Magicked together by: <a href="https://www.facebook.com/anzelika91"
+        target="_blank">AnzuPai</a><br>anzelika91@gmail.com</div>
+
 
     <!-- My JS -->
-    <script src="https://czochahelper.site/javascript.js"></script>
+    <script src="javascript.js"></script>
     <!-- jQuery & Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
@@ -161,10 +363,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
-    <!-- ends content-->
 
 
-  </div>
+  </div> <!-- /container main-->
 </body>
 
 </html>
