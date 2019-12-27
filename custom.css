@@ -28,6 +28,14 @@ body {
   
 }
 
+#days li {
+margin: 3px -1px;
+}
+
+#days .nav-link {
+    padding: 1px 4px;
+}
+
 
 /* navbar */
 
@@ -47,6 +55,7 @@ body {
 
 .nav-item a{
     color: white !important;
+    margin-top: 3px;
 }
 
 
@@ -70,6 +79,12 @@ h1 {
 h3 {
     font-family: 'Girassol', serif !important;
 }
+
+h2 {
+    font-family: 'Girassol', serif !important;
+    font-size: 2rem;
+}
+
 .yeartext,
 .pathtext {
     margin-bottom: -0.6rem !important;
@@ -180,9 +195,15 @@ i {
     font-size: 0.8rem;
 }
 
-.lyrics {
+.lyrics, #spells {
     font-family: Gupter, sans-serif;
 }
+
+#spells p {
+    text-align: left;
+   line-height: 1.1rem;
+}
+
 
 .credits a{
     color: rgb(103, 87, 173) !important;
@@ -218,6 +239,7 @@ ul.songlist {
 
  .songlist li{
 margin: 3px;
+
 } 
 
 .songlist a {
@@ -296,17 +318,9 @@ h1 a {
     h3{
         font-size: 1.25rem !important;
     }
-    
-     .lyrics h3 {
+
+    .lyrics h3 {
         font-size: 1.5rem !important;
-    }
-
-}
-
-@media only screen and (max-width: 800px) {
-    .container.main {
-        width: 100% !important;
-        height: 100% !important;
     }
 
 }
