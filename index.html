@@ -15,12 +15,12 @@
     integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
   <link rel="icon" type="image/png" href="https://anzuj.github.io/czocha/images/favicon.png">
 
-  <link href="https://fonts.googleapis.com/css?family=Girassol|Unica+One|Merriweather|Solway&display=swap"
+  <link href="https://fonts.googleapis.com/css?family=Girassol|Unica+One|Merriweather|Gupter|Solway&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <title>Czocha Timetable</title>
-  <meta name="theme-color" content="#5A6268" />
+  <meta name="theme-color" content="#2D365F" />
 </head>
 
 
@@ -33,16 +33,20 @@
     <div class="container mb-2">
       <ul id="pills-tab" role="tablist" class="nav nav-pills nav-justified">
         <li class="nav-item">
-          <a data-toggle="pill" id="index-tab" class="nav-link active" aria-selected="true" href="#index"
-            role="tab" aria-controls="index">Timetable</a>
+          <a data-toggle="pill" id="index-tab" class="nav-link active" aria-selected="true" href="#index" role="tab"
+            aria-controls="index">Timetable</a>
         </li>
         <li class="nav-item data-toggle">
-          <a data-toggle="pill" id="events-tab" class="nav-link" aria-selected="false" href="#events"
-            role="tab" aria-controls="events">Event Schedule</a>
+          <a data-toggle="pill" id="events-tab" class="nav-link" aria-selected="false" href="#events" role="tab"
+            aria-controls="events">Schedule</a>
         </li>
         <li class="nav-item data-toggle">
-          <a data-toggle="pill" id="songs-tab" class="nav-link" aria-selected="false" href="#songs"
-            role="tab" aria-controls="songs">Songs</a>
+          <a data-toggle="pill" id="songs-tab" class="nav-link" aria-selected="false" href="#songs" role="tab"
+            aria-controls="songs">Songs</a>
+        </li>
+        <li class="nav-item data-toggle">
+          <a data-toggle="pill" id="spells-tab" class="nav-link" aria-selected="false" href="#spells" role="tab"
+            aria-controls="spells">Spells</a>
         </li>
       </ul>
     </div>
@@ -53,8 +57,7 @@
     <div class="tab-content" id="pills-tabContent">
 
       <!-- timetable pane -->
-      <div id="index" class="col-container tab-pane fade show active" role="tabpanel"
-        aria-labelledby="index-tab">
+      <div id="index" class="col-container tab-pane fade show active" role="tabpanel" aria-labelledby="index-tab">
         <div class="row">
           <div class="col-6">
 
@@ -274,81 +277,251 @@
       </div> <!-- /events -->
 
       <!-- songs -->
-
       <div class="tab-pane fade" id="songs" role="tabpanel" aria-labelledby="songs-tab">
 
-
-     
-    <div class="card col-lg-5 col-7 m-auto">
-      <div class="card-body">
-        <a class="stretched-link" href="/songs/czochasongs.html">
-          <img class="card-img-top" src="https://czochahelper.site/images/czocha.png" alt="czocha">
-          <h3 class="card-title">Czocha songs</h3>
-        </a>
-      </div>
-    </div>
-       <!-- /czocha -->
-
-
- <div class="row justify-content-center">
-        <!-- other houses -->
-        <div class="card col-lg-4 col-6">
+        <div class="card col-lg-5 col-7 m-auto">
           <div class="card-body">
-            <a class="stretched-link" href="/songs/durentiussongs.html">
-              <img class="card-img-top" src="https://czochahelper.site/images/durentius.png" alt="czocha">
-              <h3 class="card-title">Durentius songs</h3>
+            <a class="stretched-link" href="/songs/czochasongs.html">
+              <img class="card-img-top" src="https://czochahelper.site/images/czocha.png" alt="czocha">
+              <h3 class="card-title">Czocha songs</h3>
             </a>
           </div>
         </div>
-        <!-- card separation -->
-        <div class="card col-lg-4 col-6">
-          <div class="card-body">
-            <a class="stretched-link" href="/songs/sendivogiussongs.html">
-              <img class="card-img-top" src="https://czochahelper.site/images/sendi.png" alt="czocha">
-              <h3 class="card-title">Sendivogius songs</h3>
-            </a>
+        <!-- /czocha -->
+
+
+        <div class="row justify-content-center">
+          <!-- other houses -->
+          <div class="card col-lg-4 col-6">
+            <div class="card-body">
+              <a class="stretched-link" href="/songs/durentiussongs.html">
+                <img class="card-img-top" src="https://czochahelper.site/images/durentius.png" alt="czocha">
+                <h3 class="card-title">Durentius songs</h3>
+              </a>
+            </div>
           </div>
-        </div>
-     
-        <!-- card separation -->
-        <div class="card col-lg-4 col-6">
-          <div class="card-body">
-            <a class="stretched-link" href="/songs/molinsongs.html">
-              <img class="card-img-top" src="https://czochahelper.site/images/molin.png" alt="czocha">
-              <h3 class="card-title">Molin songs</h3>
-            </a>
+          <!-- card separation -->
+          <div class="card col-lg-4 col-6">
+            <div class="card-body">
+              <a class="stretched-link" href="/songs/sendivogiussongs.html">
+                <img class="card-img-top" src="https://czochahelper.site/images/sendi.png" alt="czocha">
+                <h3 class="card-title">Sendivogius songs</h3>
+              </a>
+            </div>
           </div>
-        </div>
+
+          <!-- card separation -->
+          <div class="card col-lg-4 col-6">
+            <div class="card-body">
+              <a class="stretched-link" href="/songs/molinsongs.html">
+                <img class="card-img-top" src="https://czochahelper.site/images/molin.png" alt="czocha">
+                <h3 class="card-title">Molin songs</h3>
+              </a>
+            </div>
+          </div>
           <!-- card separation -->
 
-        <div class="card col-lg-4 col-6">
-          <div class="card-body">
-            <a class="stretched-link" href="/songs/faustsongs.html">
-              <img class="card-img-top" src="https://czochahelper.site/images/faust.png" alt="czocha">
-              <h3 class="card-title">Faust songs</h3>
-            </a> </div>
-        </div>
+          <div class="card col-lg-4 col-6">
+            <div class="card-body">
+              <a class="stretched-link" href="/songs/faustsongs.html">
+                <img class="card-img-top" src="https://czochahelper.site/images/faust.png" alt="czocha">
+                <h3 class="card-title">Faust songs</h3>
+              </a> </div>
+          </div>
 
-  
-        <!-- card separation -->
-        <div class="card col-lg-4 col-6">
-          <div class="card-body">
-            <a class="stretched-link" href="/songs/libussasongs.html">
-              <img class="card-img-top" src="https://czochahelper.site/images/libussa.png" alt="czocha">
-              <h3 class="card-title">Libussa songs</h3>
-            </a>
+
+          <!-- card separation -->
+          <div class="card col-lg-4 col-6">
+            <div class="card-body">
+              <a class="stretched-link" href="/songs/libussasongs.html">
+                <img class="card-img-top" src="https://czochahelper.site/images/libussa.png" alt="czocha">
+                <h3 class="card-title">Libussa songs</h3>
+              </a>
+            </div>
           </div>
         </div>
+
       </div>
 
+      <!-- /songs -->
+
+
+      <!-- spells -->
+      <div class="tab-pane fade" id="spells" role="tabpanel" aria-labelledby="spells-tab">
+        <h2>Standard Book of Spells</h2>
+        <img width="30px"
+          src="https://images.vexels.com/media/users/3/157555/isolated/preview/2b48b29abd18febe3b1f92a85913ce39-simple-book-icon-by-vexels.png"
+          alt="spellbook">
+
+        <!--spell submenu -->
+        <div class="container mb-2">
+          <ul id="days" class="nav nav-pills justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="#attack">Attack</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#defend">Defend</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#mind">Mind</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#healing">Healing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#transform">Transform</a>
+            </li>
+          </ul>
+        </div>
+        <!--/spellsubmenu -->
+
+
+        <h3 id="attack">Attack</h3>
+        <p><strong>Adficio</strong>: With this spell you can physically drain you opponent from its energy.</p>
+
+        <p><strong>Infirmio</strong>: Makes your opponent ill.</p>
+        <p><strong>Chronic Infirmio</strong>: Infect your opponent with a sickness. Long-term spell.</p>
+
+
+
+        <p><strong>Constringo</strong>: Bind your opponent together with ropes (shot from your wand).</p>
+        <p><strong>Freezio</strong>: Makes your opponent stand completely still.</p>
+        <p><strong>Clumsio</strong>: Makes your opponent trip.</p>
+        <p><strong>Collapsio</strong>: Makes you opponent faint.</p>
+        <p><strong>Hamstringo</strong>: To cripple. Makes the opponent not be able to use one leg. When preforms again,
+          the curse switches to the other leg.</p>
+        <p><strong>Slappio</strong>: This spell slaps your opponent with an invisible hand.</p>
+        <p><strong>Punchio</strong>: This spell beats your opponent with an invisible fist.</p>
+        <p><strong>Affligo</strong>: Knocks you opponent out of the way.</p>
+        <p><strong>Depulso</strong>: Push something of someone out of the way.</p>
+        <p><strong>Scabiola</strong>: Makes the skin of your opponent itch.</p>
+        <p><strong>Tremo</strong>: Make somebody's body shake.</p>
+        <p><strong>Inflatus</strong>: Makes your opponent swell up.</p>
+        <p><strong>Lacerato</strong>: Tear someonein pieces (requires strong intent).</p>
+        <p><strong>Damno</strong>: Makes you opponent feel pain.</p>
+        <p><strong>Excrucio</strong>: Makes your opponent feel excruciating pain.</p>
+        <p><strong>Obruo</strong>: Makes soil appear in your opponent's mouth and nose.</p>
+        <p><strong>Praefoco</strong>: Makes your opponent choke. Your opponent can't breathe, because an invisible force
+          blocks the trachea.</p>
+        <p><strong>Scelero</strong>: Makes blood appear in your opponent's mouth and nose.</p>
+        <p><strong>Suffoco</strong>: Makes your opponent suffocate. Removes all the oxygen around your opponent.</p>
+        <p><strong>Claudeo</strong>: Makes the bones in the opponent go soft.</p>
+        <p><strong>Conteram ossa</strong>: Break the bones of your opponent. The bone that breaks is based on the wand
+          pointing.</p>
+        <p><strong>Extorqueo</strong>: Dislocate the joints of your opponent.</p>
+        <p><strong>Carvio</strong>: With this spell you can create wounds on your opponent. The spot where the wound is
+          created is based on the wand pointing.</p>
+        <p><strong>Noceo</strong>: Inflict injury.</p>
+        <p><strong>Mutilatio</strong>: Stab your opponent. The position of the stabs is created based on the wand
+          pointing.</p>
+        <p><strong>Terebro</strong>: Bore a hole through your opponent.</p>
+        <p><strong>Inflammo</strong>: Set your opponent on fire.</p>
+        <p><strong>Morior</strong>: To kill someone.</p>
+        <p><strong>Evaporo</strong>: To vanish. Your opponent will just disappear into nothing.</p>
+        <p><strong>Decapito</strong>: Decapitate your opponent.</p>
+
+        <h3 id="defend">Defend</h3>
+
+        <p><strong>Bullo protegus</strong>: Conjure a protective shield around yourself.</p>
+        <p><strong>Defendio</strong>: Protect yourself against a physical injury.</p>
+        <p><strong>Repugno</strong>: Resist an attacking spell.</p>
+        <p><strong>Decursio</strong>: Escape a curse when it holds you captive.</p>
+        <p><strong>Liberatio</strong>: Release yourself from a binding spell.</p>
+        <p><strong>Obscurio</strong>: Hide yourself from your opponent.</p>
+        <p><strong>Deflecto</strong>: Reflect an attacking spell back to your offender.</p>
+        <p><strong>Impetus lente</strong>: To attack slow. Makes the attacking spells of your opponent go slower. This
+          way you have time to conjure a proper counter spell.</p>
+
+        <h3 id="mind">Mind</h3>
+        <p><strong>Mutio</strong>: Make someone shut up (no talking).</p>
+        <p><strong>Silentio</strong>: Make someone be silent (no sound).</p>
+        <p><strong>Chantio</strong>: Make someone sing.</p>
+        <p><strong>Humoro</strong>: Make someone laugh.</p>
+        <p><strong>Sobbio</strong>: Make someone cry.</p>
+        <p><strong>Clamo</strong>: Make someone shout.</p>
+        <p><strong>Combibo</strong>: Make someone drink something.</p>
+        <p><strong>Trimpudio</strong>: Make someone jump.</p>
+        <p><strong>Consurgo</strong>: Make someone stand up.</p>
+        <p><strong>Reclinio</strong>: Make someone lie down.</p>
+        <p><strong>Snoozio</strong>: Make someone fall asleep.</p>
+        <p><strong>Essum</strong>: Make someone eat something.</p>
+        <p><strong>Erubesco</strong>: Make someone blush.</p>
+        <p><strong>Queritor</strong>: Make someone complain.</p>
+        <p><strong>Desipio</strong>: Make someone act foolish.</p>
+        <p><strong>Dissimulo</strong>: Make someone ignore you.</p>
+        <p><strong>Nescio</strong>: Make someone not notice something.</p>
+        <p><strong>Inservio</strong>: Make someone do your bidding/ be your slave.</p>
+        <p><strong>Imitor</strong>: Make someone imitate somebody else.</p>
+        <p><strong>Itero</strong>: Make someone repeat everything they say.</p>
+        <p><strong>Itero... (Name of person)</strong>: Make someone repeat everything the called upon person is saying.
+        </p>
+        <p><strong>Itero omnia</strong>: Make someone repeat everything they hear.</p>
+        <p><strong>Compatior</strong>: Make someone feel somebody their pain as well.</p>
+        <p><strong>Contemno</strong>: Make someone feel hatred to someone else (As long as the spellcaster is pointing
+          at them).</p>
+        <p><strong>Constristo</strong>: Make someone feel sad.</p>
+        <p><strong>Conturbo</strong>: Make someone feel confused.</p>
+        <p><strong>Despero</strong>: Make someone feel like all hope is lost.</p>
+        <p><strong>Dubito</strong>: Make someone doubt about everything.</p>
+        <p><strong>Esurio</strong>: Make someone feel hungry.</p>
+        <p><strong>Exhilaro</strong>: Make someone feel cheerful.</p>
+        <p><strong>Invideo</strong>: Make someone feel jealousy.</p>
+        <p><strong>Irascor</strong>: Make someone feel anger.</p>
+        <p><strong>Lasesco</strong>: Make someone feel tired.</p>
+        <p><strong>Miro</strong>: Make someone be lost in thoughts.</p>
+        <p><strong>Pertimesco</strong>: Make someone feel afraid.</p>
+        <p><strong>Agnosco</strong>: Make someone remember something that has been forgotten by a spell.</p>
+        <p><strong>Recognosco</strong>: Make someone recognize someone that has been forgotten by a spell.</p>
+        <p><strong>Regardo...(Object or person)</strong>: Make someone give their attention to the object or person you
+          call upon.</p>
+        <p><strong>Amorio</strong>: Make someone feel attraction to someone else. (As long as the spellcaster is
+          pointing at them).</p>
+        <p><strong>Dehydro</strong>: Make someone feel thirsty.</p>
+        <p><strong>Somnio</strong>: Make someone dream something you want them to dream.</p>
+        <p><strong>Terreo</strong>: Make someone feel terrified.</p>
+        <p><strong>Vomito</strong>: Make someone feel they must throw up.</p>
+        <p><strong>Violento</strong>: Make someone wanting to start a fight.</p>
+        <p><strong>Libero</strong>: Release somebody of mind magic hex they were in.</p>
+
+        <h3 id="healing">Healing</h3>
+        <p><strong>Compresso</strong>: Compress a wound.</p>
+        <p><strong>Purgo</strong>: Makes a wound clean and sterile.</p>
+        <p><strong>Medicor</strong>: Heal a wound.</p>
+        <p><strong>Suturio</strong>: Stitch flesh together.</p>
+        <p><strong>Fascia</strong>: Wrap something in bandages.</p>
+        <p><strong>Os emendo</strong>: Mend broken bone.</p>
+        <p><strong>Frendo Sano</strong>: Heals bruises.</p>
+        <p><strong>Subvenio </strong>: Relieve someone from the pain.</p>
+        <p><strong>Rememdium</strong>: Cures sicknesses.</p>
+        <p><strong>Febrem abierunt</strong>: Makes someone's fever go away.</p>
+        <p><strong>Validus</strong>: Let someone gain some of your strength.</p>
+        <p><strong>Cognosco</strong>: Examine someone.</p>
+
+        <h3 id="transform">Transform</h3>
+        <p><strong>Amplio</strong>: increase the size of an object.</p>
+        <p><strong>Minuo</strong>: Decrease the size of an object.</p>
+        <p><strong>Fittio</strong>: Let an object change it appearance to fit inside something.</p>
+        <p><strong>Mollio</strong>: Makes something soft and pliable.</p>
+        <p><strong>Amputo</strong>: To cut something off.</p>
+        <p><strong>Lacerato</strong>: Tear something in pieces (when cast with intense intent, can also be used as an
+          offensive spell against an enemy).</p>
+        <p><strong>Consewo</strong>: Sew things together.</p>
+        <p><strong>Conserve</strong>: Let's the object you conjured this on, be conserved for eternity.</p>
+        <p><strong>Sanguiso</strong>: Cover something in blood.</p>
+        <p><strong>Simmerio</strong>: Boil something.</p>
+        <p><strong>Dampio</strong>: Makes something wet.</p>
+        <p><strong>Venos</strong>: Poison something.</p>
+        <p><strong>Puteo</strong>: Makes something smell bad.</p>
+        <p><strong>Exposio</strong>: Reveals something that is hidden.</p>
+        <p><strong>Concealo</strong>: Makes something transparent and undetectable for others.</p>
+
+      </div>
+      <!-- /spells -->
+
+
     </div>
-      
-<!-- /songs -->
+    <!--/tab content container-->
 
-
-
-    </div> <!--/tab content container-->
-    
 
     <div class="credits">Magicked together by: <a href="https://www.facebook.com/anzelika91"
         target="_blank">AnzuPai</a><br>anzelika91@gmail.com</div>
