@@ -1,15 +1,26 @@
-
-
-  // LINK TO TABS
 $(document).ready(() => {
-    var url = window.location.href;
+        // smooth scrolls to subsections
+        document.querySelectorAll('.nav-item a[href^="#"]').forEach($anchor => {
+            $anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start' //scroll to top of the target element
+                });
+            });
+        });
+      // smooth scrolls
+
+
+ // tabs to URL
+    let url = window.location.href;
     if (url.indexOf("#") > 0){
-    var activeTab = url.substring(url.indexOf("#") + 1);
+    let activeTab = url.substring(url.indexOf("#") + 1);
       $('.nav[role="tablist"] a[href="#'+activeTab+'"]').tab('show');
     }
   
     $('a[role="tab"]').on("click", function() {
-      var newUrl;
+      let newUrl;
       const hash = $(this).attr("href");
         newUrl = url.split("#")[0] + hash;
       history.replaceState(null, null, newUrl);
@@ -17,7 +28,7 @@ $(document).ready(() => {
   });
 
 
-
+// class schedule logic
 const ari = "Arithmancy<br><div class='location'> (Museum)</div>";
 const alc = "Alchemy<br><div class='location'> (Alchemy Cellar)</div>";
 const md = "Magical Defence<br><div class='location'> (Gazebo)</div>";
@@ -31,18 +42,16 @@ const mt = "Magical Theory<br><div class='location'> (Library)</div>";
 const rm = "Ritual Magic<br><div class='location'> (Marble Hall)</div>";
 const tech = "Technomancy<br><div class='location'> (Auditorium)</div>";
 
-//function to show #classResult. Couldn't figure out how to make a conditional to make it appear once year and path are chosen, so injecting it manually to very timetable conditional instead  
-
-   
-
+//function to show #classResult instead of intro. 
 function show() {
     document.querySelector("#intro").style.display = "none";
     document.querySelector("#classResult").style.visibility = "visible";
 }
 
 $(document).ready(function () {
+
     $('input[type="radio"]').on("change", function () {
-        //making chosen radio options to variables
+        //making chosen radio options to letiables
         const $year = $('input[name="year"]:checked');
         const $path = $('input[name="path"]:checked');
 
